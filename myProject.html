@@ -1,0 +1,104 @@
+<html>
+<head>
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <img src="./assets/logo/logo.png"/>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="myProject.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+       
+        <div>
+            <a href="contact.html"></a><button>Contact Me</button></a>
+        </div>
+    </nav>
+
+        <h1 class="center"> ADD TO MY PROJECT</h1>
+        <form onsubmit="getBlog(event)">
+            <div>
+                <label for="projectName">Project Name</label>
+                <input type="text" id="projectName">
+            </div>
+            <div class="date">
+                <div class="start-date">
+                    <label for="start">Start Date</label>
+                    <input type="date" id="projectName">
+                </div>
+                <div class="end-date">
+                    <label for="end">End Date</label>
+                    <input type="date" id="end">
+                </div>
+            </div>
+            <div>
+                <label for="desk">Description</label>
+                <textarea id="desk"> </textarea>
+            </div>
+            <div >
+                <label>Technologies</label>
+                    <div class="checkbox">
+                        <input type="checkbox" id="node">
+                        <label style="margin-right: 50px;">Node Js</label>
+                        <input type="checkbox" id="next">
+                        <label>Next Js </label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="reach">
+                        <label style="margin-right: 37px;">Reach Js</label>
+                        <input type="checkbox" id="typeScript">
+                        <label>TypeScript </label>
+                    </div>
+            </div>
+            <div>
+                <label>Upload Image</label>
+                <label class="input-foto" for="foto">
+                    <p>Attach File</p>
+                    <img src="./assets/icon/file.png" >
+                </label>
+                <input type="file" id="foto" hidden/>
+            </div>
+            <div>
+                <button>submit</button>
+            </div>
+        </form>
+<br><br>
+<div class="myProject">
+    <br>
+    <h1>MY PROJECT</h1>
+    
+    <div class="project" id="contents">
+        <a href="project-detail.html">  
+        <div class="contents">
+            <img src="./assets/foto/People.jpeg"/>
+                <a class="judul">Dumbways Mobile Items</a>
+                <p class="durasi">3 bulan</p>
+                <p class="desk">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Facilis possimus aliquam, dolor quaerat, neque magni error minus 
+                    fuga dicta in repellendus eius impedit rerum officia quis eos explicabo cupiditate cum?
+                </p>
+                <img class="tech" src="./assets/icon/node.png"/>
+                <img class="tech" src="./assets/icon/next.png"/>
+                <img class="tech" src="./assets/icon/reach.png"/>
+                <img class="tech" src="./assets/icon/typeScript.png"/>
+                <div class="button-edit-delete">
+                    <button class="edit">edit</button>
+                    <button class="delete">delete</button>
+                </div>
+        </div>
+        </a>    
+    </div>
+    
+</div>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
